@@ -13,6 +13,8 @@
 
 <div class="border container" style="padding: 30px">
     <form method="post">
+        @*//had to add the hidden input here or there is no id being passed to the book*@
+        <input type="hidden" asp-for="Book.Id"/>
         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
         <div class="form-group row">
             <div class="col-4">
